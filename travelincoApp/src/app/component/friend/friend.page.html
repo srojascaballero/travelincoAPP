@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+		</ion-buttons>
+    <ion-title>¿Alguien viene contigo?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-item>
+	  <ion-label position="floating">Nombres</ion-label>
+	  <ion-input [(ngModel)]="nameFriend"></ion-input>
+	</ion-item>
+	<ion-item>
+	  <ion-label position="floating">Apellidos</ion-label>
+	  <ion-input [(ngModel)]="lastnameFriend" color="primary"></ion-input>
+	</ion-item>
+
+	<p>{{nameFriend}}-{{lastnameFriend}}</p>
+
+</ion-content>
+
+<ion-footer padding>
+  	<ion-grid>
+				<ion-row class="ion-align-items-center">
+				<ion-col size="6">
+					<span class="text-date-info">Una persona más</span>
+				</ion-col>
+				<ion-col class="ion-text-right" size="6">
+					<ion-button routerLink="/select-experience" shape="round" fill="outline" color="primary" class="elegir">Añadir</ion-button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+</ion-footer>

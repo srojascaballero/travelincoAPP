@@ -1,0 +1,119 @@
+
+<ion-header translucent="true">
+		<ion-toolbar>
+		  <ion-buttons slot="start" translucent>
+			 <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+		  </ion-buttons>
+		</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+	<ion-slides pager="true">
+		<ion-slide>
+			<ion-img [src]="imgPlace"></ion-img>
+		</ion-slide>
+		<ion-slide>
+			<ion-img [src]="imgPlace"></ion-img>
+		</ion-slide>
+		<ion-slide>
+			<ion-img [src]="imgPlace"></ion-img>
+		</ion-slide>
+	</ion-slides>
+	<br>
+	<ion-grid padding>
+		<ion-row  class="ion-align-items-center">
+			<ion-col>
+				<ion-card-title class="titulo">{{namePlace}}</ion-card-title>
+			</ion-col>
+			<ion-buttons>
+					<ion-button  fill="clear"><ion-icon name="chatbubbles" color="primary"></ion-icon></ion-button>
+					<ion-button  fill="clear"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button>
+			</ion-buttons>	
+		</ion-row>
+		<br>
+		<ion-row class="ion-justify-content-center">
+			<ion-col>
+				<p class="text-description">{{descriptionPlace}}</p>
+			</ion-col>
+		</ion-row>
+		<br>
+		<ion-row  class="ion-align-items-center">
+			<ion-col>
+				<ion-card-title class="experiencia-titulo"><span></span>Comparte tu experiencia</ion-card-title>
+				<p style="padding: 10px 0;">Ayuda a otros viajeros a encontrar las mejores aventuras.</p>
+			</ion-col>
+			<ion-buttons>
+					<ion-button *ngIf="id === 'bIR2FDTR2KRKdIZI1LUk'" 
+					 routerLink="/inversion-musical" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === '0KDeDy6dOFRUSuDYulwr'" 
+					 routerLink="/colores-y-texturas" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === 'Atw6qpnZfaDSoSdIZG9A'" 
+					 routerLink="/el-arte-en-tu-piel" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === 'blNJMcY2TYLnqE31xDRn'" 
+					 routerLink="/concierto-intimo" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === 'kHy4KizzRxnZUNp8vLpx'" 
+					 routerLink="/tour-estoraques" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === 'CQN3RAHFF6z0du23cJ15'" 
+					 routerLink="/paramo-oceta" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+					<ion-button *ngIf="id === '53dTvfxHp2V1eA7MN0aS'" 
+					 routerLink="/canon-del-chicamocha" fill="clear">
+					 <ion-icon name="add" color="primary" ></ion-icon>
+					</ion-button>
+
+			</ion-buttons>	
+		</ion-row>
+		<ion-row>
+			<ion-col size="12">
+				<ion-row>
+					<ion-col size="3">
+						<ion-avatar>
+							<img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/jerico.jpg?alt=media&token=e6391f46-327f-4f4f-9113-f186299b62b7" alt="">
+						</ion-avatar>
+					</ion-col>
+					<ion-col size="9">
+						<ion-label>
+							<h2>Darwin s</h2>
+							<h3 style="margin-bottom: 7px;">Tenebrosa pero emocionante</h3>
+
+							<ion-card style="padding: 0; margin: 0;">
+								<img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/jerico.jpg?alt=media&token=e6391f46-327f-4f4f-9113-f186299b62b7" alt="">
+							</ion-card>
+
+							<p>Es un lugar que a simple vista da miedo pero para los de espíritu aventurero es un sitio para disfrutar.</p>
+				            
+						</ion-label>
+					</ion-col>
+				</ion-row>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
+
+<ion-footer>
+	<ion-toolbar>
+		<ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+			<ion-col size="3" class="ion-text-center"><ion-button fill="clear" ><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
+			<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
+			<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
+			<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>
+		</ion-row>
+	</ion-toolbar>
+  </ion-footer>

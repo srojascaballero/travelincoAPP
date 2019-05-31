@@ -1,0 +1,56 @@
+<ion-header translucent="true" style="display: none;">
+    <ion-toolbar>
+      <ion-back-button slot="start" icon="arrow-round-back" text="" defaultHref="/" fill="clear">
+        
+      </ion-back-button>
+      <ion-title class="ion-text-center"></ion-title>
+      <ion-button class="ion-text-right" slot="end" fill="clear" routerLink="/lugares">
+        <ion-icon class="icon-size" name="arrow-round-forward"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="content-image" fullscreen="true">
+  
+    <ion-grid padding>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>
+          <h1 class="title-login ion-text-center title-select">Elige una cuenta</h1>
+          <p class="white">para iniciar la experiencia</p>
+          <ion-list>
+              <ion-item routerLink="/login">
+                <ion-avatar slot="start">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/sitionuevo.jpg?alt=media&token=bb3c1bfb-344e-4d01-ba89-56e3ecb4752a">
+                </ion-avatar>
+                <ion-label>
+                  <h2 class="white-account">Nocole aranguren</h2>
+                  <p class="white-account">nicolearangurenar@gmail.com</p>
+                </ion-label>
+              </ion-item>  
+              <ion-item routerLink="/login">
+                  <ion-avatar slot="start">
+                      <ion-icon name="person-add" style="color: white; font-size: 2em;"></ion-icon>
+                  </ion-avatar>
+                  <ion-label>
+                    <h2 class="white-account">Usar otra cuenta</h2>
+                    <p class="white-account">Ingresa a tu nueva cuenta</p>
+                  </ion-label>
+                </ion-item>   
+          </ion-list>
+          <p class="white" style="font-size: .7em; text-align: justify">Para continuar, Google compartirá tu nombre, dirección de correo electrónico y foto de perfil con Travelinco. Antes de usar esta App, consulta su <strong>política de privacidad y las condiciones del servicio.</strong></p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
+    
+  </ion-content>
+  
+  <ion-footer translucent="true" class="footer-home">
+    <ion-toolbar>
+      <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+        <ion-button fill="clear" routerLink="/lugares" class="footer-button">Entrar</ion-button> | 
+        <ion-button fill="clear" class="footer-button" routerLink="/login">Regístrate</ion-button>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+        </ion-buttons>
+        <ion-title class="sitio-title">Perfil<br><span class="sitio-subtitle"></span></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/Lomas.jpg?alt=media&token=253a2c2e-e742-4eb7-b8a8-3d6dce9851ab" alt="">
+
+<ion-content>
+    <ion-grid padding>
+        <ion-row class="ion-justify-content-center">
+          <ion-col>
+              <ion-card-title class="titulo">Mariana Paez</ion-card-title>
+            <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt exercitationem molestiae harum, obcaecati atque, quae quis officiis esse porro magnam enim laudantium reiciendis blanditiis, voluptate inventore in ex quaerat rerum.</p>
+            <ion-button expand="block" color="danger" (click)="Onlogout()">
+                CERRAR SESIÓN
+            </ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" ><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>
+      </ion-row>
+    </ion-toolbar>
+    </ion-footer>

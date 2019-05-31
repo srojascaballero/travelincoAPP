@@ -1,0 +1,238 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+
+@font-face {
+    font-family: 'Stellar';
+    src: url('../assets/fonts/Stellar-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Stellar-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stellar';
+    src: url('../assets/fonts/Stellar-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Stellar-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stellar';
+    src: url('../assets/fonts/Stellar-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Stellar-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stellar';
+    src: url('../assets/fonts/Stellar-Light.woff2') format('woff2'),
+        url('../assets/fonts/Stellar-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #EC608A;
+  --ion-color-primary-rgb: 236, 96, 138;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #EC608A;
+  --ion-color-primary-tint: #EC608A;
+
+  /** secondary **/
+  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0bb8cc;
+  --ion-color-secondary-tint: #24d6ea;
+
+  /** tertiary **/
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  /** success **/
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  /** warning **/
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  --ion-font-family: 'Stellar';
+
+}
+
+
+ion-label{
+    overflow: inherit !important;
+}
+
+ion-title{
+    overflow: inherit !important;
+}
+
+.toolbar-title{
+    overflow: inherit !important;
+    min-height: 100px;
+}
+
+.sitio-subtitle{
+    font-size: .6em;
+    color: rgb(160, 160, 160);
+}
+
+.back-button-custom span ion-icon{
+    font-size: 1.2em;
+}
+
+.sitio-title{
+    font-weight: bold;
+}
+
+h2.title-experience{
+	font-size: 1em;
+	color: #EC608A
+}
+
+p.text-experience{
+	font-size: .9em;
+	text-align: justify;
+	color: gray;
+}
+
+.requeriments{
+	font-size: 2em;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+
+.elegir{
+	--color: #EC608A ;
+	font-size: .6em;
+}
+
+.price-select{
+	border-top: 1px solid #C0C0C0;
+	padding-top: 13px;
+	margin-top: 8px;
+}
+
+.text-date-info{
+	--color: #414141;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+h2.title-filter-section{
+	margin: 5px;
+	font-weight: 900;
+	color: #4c4c4c;
+	font-size: 20px;
+}
+
+.filter-button{
+	--border-color: gray !important;
+	--border-width: 1px !important;
+    --border-radius: 20px !important;
+    --color: rgb(172, 172, 172) !important;
+    font-size: 10px !important;
+
+}
+
+.active{
+	--background: #EB6089 !important;
+	--border-color: white !important;
+	--border-width: 0px !important;
+    --border-radius: 20px !important;
+	--color: rgb(255, 255, 255) !important;
+}
+
+.footer-home{
+    --background: rgba(0,0,0,0) !important;
+}
+
+.footer-home ion-toolbar{
+    --background: rgba(0,0,0,0) !important;
+}
+
+.heartone {
+    top: 4px;
+    position: relative;
+}
+
+.title-articulo{
+    font-weight: bold;
+    color: rgb(87, 87, 87) !important;
+}
+
+.title-select{
+    margin: 0;
+}
+
+.white{
+    text-align: center;
+    margin: 0;
+    color: white !important;
+    font-size: 1em;
+}
+
+.white-account{
+    text-align: left;
+    margin: 0;
+    color: white !important;
+    font-size: 1em;
+}
+
+.item-interactive.item-has-focus {
+    --highlight-background: white;
+  }

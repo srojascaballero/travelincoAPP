@@ -1,0 +1,90 @@
+
+//Variables
+
+ion-content.content-image{
+	--background: url('../../../assets/img/background-blur.jpg')  no-repeat center center / cover;
+    --ion-background-color:rgba(0,0,0,0);
+}
+
+ion-grid{
+	height: 100%;
+}
+
+ion-grid ion-row{
+	height: 100%;
+}
+
+
+ion-header{
+	--ion-background-color: rgba(0,0,0,0)
+}
+
+ion-footer{
+	--ion-background-color: rgba(0,0,0,0)
+}
+
+
+
+/*
+	Titulos
+*/
+
+
+.title-login{
+	color: white;
+	font-weight: bold;
+	margin: 0;
+}
+
+.subtitle-login{
+	color: white;
+	text-align: center;
+	font-size: .9em;
+	margin-top: 0;
+	margin-bottom:20px;
+}
+
+.label-login{
+	--color: white;
+	--highlight-color-focused: rgba(236,96,138, 1);
+}
+
+/*
+	Buttons
+*/
+
+.button-entrar{
+	--background: rgba(236,96,138, 1);
+	--border-radius: 20px;
+	--border-color: white;
+	--padding-top: 20px;
+	--padding-bottom: 20px;
+	margin: 20px 0;
+	--background-focused: red;
+	--background-activated: rgba(236,96,138,1);
+}
+
+.button-social{
+	--background: rgba(0,0,0,0);
+	--border-radius: 20px;
+	--border-width: 2px;
+	--border-color: white;
+	--border-style: solid;
+	--padding-top: 20px;
+	--padding-bottom: 20px;
+	margin: 20px 0;
+	--background-focused: red;
+	--background-activated: rgba(236,96,138,.5);
+}
+
+.icon-button{
+	padding: 0 7px;
+}
+
+.footer-button{
+	--color: white;
+}
+
+.footer-buttons-row{
+	color: white;
+}

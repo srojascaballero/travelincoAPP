@@ -1,0 +1,51 @@
+<ion-header translucent="true" style="display: none;">
+  <ion-toolbar>
+  	<ion-back-button slot="start" icon="arrow-round-back" text="" defaultHref="/" fill="clear">
+  		
+  	</ion-back-button>
+  	<ion-title class="ion-text-center"></ion-title>
+  	<ion-button class="ion-text-right" slot="end" fill="clear" routerLink="/lugares">
+  		<ion-icon class="icon-size" name="arrow-round-forward"></ion-icon>
+  	</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-image no-scroll" fullscreen="true">
+	<ion-grid padding>
+		<ion-row class="ion-align-items-center ion-justify-content-center">
+			<ion-col>
+				<h1 class="title-login ion-text-center">Bienvenido a Travelinco</h1>
+				<h2 class="subtitle-login">Ingresa con tu corrreo</h2>
+				<ion-item>
+					<ion-label position="floating" class="label-login">Nombre</ion-label>
+					<ion-input type="text"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label position="floating" class="label-login">Fotografia</ion-label>
+					<ion-input type="text"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label position="floating" class="label-login">Correo Electrónico</ion-label>
+					<ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label position="floating" class="label-login" >Contraseña</ion-label>
+					<ion-input type="password" [(ngModel)]="password"  name="password"></ion-input>
+				</ion-item>
+				<br>
+				<ion-button (click)="OnSubmitLogin()" expand="block" class="button-social">Ingresar<ion-icon name="arrow-forward"></ion-icon></ion-button>
+				
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	
+</ion-content>
+
+<ion-footer translucent="true">
+  <ion-toolbar>
+  	<ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+  		<ion-button fill="clear" routerLink="/lugares" class="footer-button">Entrar</ion-button> | 
+  		<ion-button fill="clear" class="footer-button" routerLink="/login">Regístrate</ion-button>
+  	</ion-row>
+  </ion-toolbar>
+</ion-footer>

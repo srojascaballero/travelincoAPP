@@ -1,0 +1,32 @@
+<ion-header>
+		<ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+          </ion-buttons>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-searchbar placeholder="Busca una experiencia"></ion-searchbar>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12">
+          <h1 class="title-articulo">Los 10 pueblos más bonitos de Colombia</h1>
+          <p class="text">Los pueblos más bonitos de Colombia tienen mucho más de lo que crees, en la mayoría de los pueblos de Colombia encontrarás paraísos inexplorados, naturaleza y personas únicas.</p><br>
+          <img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/Lomas.jpg?alt=media&token=253a2c2e-e742-4eb7-b8a8-3d6dce9851ab" alt="">
+        </ion-col>
+        <br>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" ><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>

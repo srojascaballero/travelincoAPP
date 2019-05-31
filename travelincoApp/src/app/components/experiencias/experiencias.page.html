@@ -1,0 +1,59 @@
+<ion-header>
+		<ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+          </ion-buttons>
+          <ion-title class="sitio-title">Favoritos<ion-icon name="heart-empty" color="primary"  class="heartone"></ion-icon></ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+		<ion-buttons>
+			<ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/favoritos" routerLinkActive="active">Lugares</ion-button>
+			<ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/experiencias" routerLinkActive="active">Experiencias</ion-button>
+			<ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/articulos" routerLinkActive="active">Artículos</ion-button>
+		</ion-buttons>
+		<ion-grid>
+			<ion-row>
+				<ion-col size="12">
+					<ion-card>
+							<a routerLink="/surf" routerDirection="forward"><img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/surf2.jpg?alt=media&token=5a9b189d-4dcd-4807-adec-236e52025500" alt=""></a>
+						</ion-card>
+						<div class="content">
+								<ion-row>
+									<ion-col size="8">
+                    <a routerLink="/surf" routerDirection="forward" class="link-title">Practica Surfing</a>
+									</ion-col>
+									<ion-col size="4">
+										<a routerLink="/favoritos"  class="fav" (click)="presentAlert()"> <ion-icon name="heart-empty" color="primary"></ion-icon></a>
+                  </ion-col>
+                  <ion-col size="12">
+                      <p style="margin: 0">60,0000 COP por persona</p>
+                    </ion-col>
+									</ion-row>
+						</div>
+						<div class="description">
+							<ion-row>
+									<ion-col size="12">
+										<p class="text-description">
+												Puerto Colombia, Atlántico
+											<span class="more">...</span>
+										</p>
+									</ion-col>
+									</ion-row>
+						</div>
+					</ion-col>
+			</ion-row>
+		</ion-grid>
+	</ion-content>
+
+	<ion-footer>
+			<ion-toolbar>
+				<ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+					<ion-col size="3" class="ion-text-center"><ion-button fill="clear"><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
+					<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
+					<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
+					<ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>
+				</ion-row>
+			</ion-toolbar>
+		</ion-footer>

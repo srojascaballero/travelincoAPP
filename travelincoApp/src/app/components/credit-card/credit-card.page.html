@@ -1,0 +1,44 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+				<ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+			</ion-buttons>
+			<ion-title class="sitio-title">Tarjeta de Crédito<br><span class="sitio-subtitle"></span></ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<h2 class="requeriments">Datos de tu tarjeta</h2>
+				<p>Número de tarjeta</p>
+			</ion-col>	
+		</ion-row>
+
+
+	</ion-grid>
+
+	<ion-item>
+		<ion-label position="floating"></ion-label>
+		<ion-input [(ngModel)]="cardNumber" placeholder="0000-0000-0000-0000" color="primary"></ion-input>
+	</ion-item>
+	{{cardNumber}}
+	
+
+</ion-content>
+
+<ion-footer padding>
+  	<ion-grid>
+				<ion-row class="ion-align-items-center">
+				<ion-col size="6">
+					<span class="text-date-info">96.000 COP por persona</span>
+				</ion-col>
+				<ion-col class="ion-text-right" size="6">
+					<ion-button routerLink="/select-experience" shape="round" fill="outline" color="primary" class="elegir" (click)="presentAlert()">Siguiente</ion-button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+</ion-footer>
+

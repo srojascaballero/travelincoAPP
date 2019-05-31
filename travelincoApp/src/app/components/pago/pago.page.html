@@ -1,0 +1,48 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+				<ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+			</ion-buttons>
+			<ion-title class="sitio-title">Añadir pago<br><span class="sitio-subtitle"></span></ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+					<h2 class="requeriments">Pagar</h2>
+					<p >Únicamente pesos colombianos</p>
+			</ion-col>	
+		</ion-row>
+
+
+	</ion-grid>
+
+	<ion-item routerLink="/credit-card">
+          <ion-icon slot="end" name="card" color="primary"></ion-icon>
+          <ion-label >Tarjeta de crédito</ion-label>
+    </ion-item>
+
+    <ion-item href="https://www.paypal.com/co/home">
+          <ion-icon slot="end" name="cash" color="primary"></ion-icon>
+          <ion-label >Paypal</ion-label>
+		</ion-item>
+		
+	
+
+</ion-content>
+
+<ion-footer padding>
+  	<ion-grid>
+				<ion-row class="ion-align-items-center">
+				<ion-col size="6">
+					<span class="text-date-info">Una persona más</span>
+				</ion-col>
+				<ion-col class="ion-text-right" size="6">
+					<ion-button routerLink="/friend" shape="round" fill="outline" color="primary" class="elegir">Añadir</ion-button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+</ion-footer>

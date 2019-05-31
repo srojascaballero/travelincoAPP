@@ -1,0 +1,58 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+		</ion-buttons>
+		<ion-title class="sitio-title">Experiencia Seleccionada<br><span class="sitio-subtitle"></span></ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-grid>
+		<ion-row>
+			<h2 class="requeriments">Requerimientos para tu experiencia</h2>
+			<p>Es importante que nos envíes una fotografía para verificar que coincida con tu documento de identidad.</p>
+		</ion-row>
+
+	</ion-grid>
+	
+	<ion-item routerLink="/friend">
+          <ion-icon slot="end" name="add" color="primary"></ion-icon>
+		  <ion-label >¿Alguien viene contigo?</ion-label>
+    </ion-item>
+
+    <ion-item routerLink="/pago">
+          <ion-icon slot="end" name="add" color="primary"></ion-icon>
+          <ion-label >Añadir Pago</ion-label>
+    </ion-item>
+
+    <br><br><br>
+   <br>
+</ion-content>
+
+<ion-footer>
+	    <ion-grid padding>
+				<ion-row class="ion-align-items-center">
+					<ion-col size="6">
+						<span *ngIf="date !== '' " class="text-date-info"><strong></strong> {{dateSelected}}</span>
+						<span *ngIf="date == ''" class="text-date-info"><strong></strong> Ingrese Fecha</span>
+					</ion-col>
+					<ion-col class="ion-text-right" size="6">
+						<span *ngIf="hour !== '' " class="text-date-info"><strong></strong> {{hourSelected}} </span>
+						<span *ngIf="hour == '' " class="text-date-info"><strong></strong> Ingresa la hora </span>
+					</ion-col>
+				</ion-row>
+		</ion-grid>
+		<ion-grid padding style="padding-top: 0;">
+				<ion-row class="price-select ion-align-items-center">
+				<ion-col size="6">
+					<span class="text-date-info">96.000 COP por persona</span>
+				</ion-col>
+				<ion-col class="ion-text-right" size="6">
+					<ion-button routerLink="/friend" shape="round" fill="outline" color="primary" class="elegir">Elegir experiencia</ion-button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+</ion-footer>
