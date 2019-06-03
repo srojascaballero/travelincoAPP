@@ -41,7 +41,10 @@ export class LugaresPage implements OnInit {
       // console.log("All Places: "+ JSON.stringify(places));
       this.places = places;  
       this.createRecommendedPlacesList(places);
-  	});
+    });
+    
+    // this.placeservice.test("this name is a test", "This is also a test");
+
   }
 
   createRecommendedPlacesList(placesList : any){

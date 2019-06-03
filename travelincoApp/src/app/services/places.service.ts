@@ -9,6 +9,10 @@ export interface place {
 	id: string;
 	img: string;
 }
+export interface test {
+	name : string
+	description:  string;
+}
 
 
 @Injectable({
@@ -27,7 +31,12 @@ export class PlacesService {
         	console.log(data);
   		})
   	}))
-  }
+	}
+	
+	test (sName: string, sDescrption: string){
+		let testCollection = this.db.collection<test>('places');
+		testCollection.add({name : sName, description : sDescrption})
+	}
 
 
 }

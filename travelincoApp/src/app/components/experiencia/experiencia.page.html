@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+          <ion-buttons slot="start">
+              <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+          </ion-buttons>
+      <ion-title>NUEVA EXPERIENCIA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+      <ion-item>
+        <!-- <ion-label position="floating" aria-placeholder="añade un titulo a tu experiencia">Nombres</ion-label> -->
+        <ion-input [(ngModel)]="title" placeholder="Añade un título a tu experiencia"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- <ion-label position="floating">Apellidos</ion-label> -->
+        <ion-input [(ngModel)]="photo" color="primary" placeholder="Agrega fotografías"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <!-- <ion-label position="floating">Apellidos</ion-label> -->
+        <ion-textarea [(ngModel)]="description" color="primary" placeholder="Describe tu aventura"></ion-textarea>
+      </ion-item>
+
+
+      <ion-button expand="block" (click)="addExperience()" >Añadir</ion-button>
+  
+  </ion-content>
+  
+  <ion-footer padding>
+        <!-- <ion-grid>
+                  <ion-row class="ion-align-items-center">
+                  <ion-col size="6">
+                      <span class="text-date-info">Una persona más</span>
+                  </ion-col>
+                  <ion-col class="ion-text-right" size="6">
+                      <ion-button routerLink="/select-experience" shape="round" fill="outline" color="primary" class="elegir">Añadir</ion-button>
+                      </ion-col>
+                  </ion-row>
+              </ion-grid> -->
+  </ion-footer>
+  
