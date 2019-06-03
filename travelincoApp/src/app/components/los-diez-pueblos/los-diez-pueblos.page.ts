@@ -20,4 +20,19 @@ export class LosDiezPueblosPage implements OnInit {
 
   }
 
+  addtoFavorites(name : string, id : string){  
+    
+      let key = name;
+
+      let value  = localStorage.getItem(key);
+      if(value != undefined && value != null && value != '' && localStorage.length != 0){
+        localStorage.setItem(key, id);
+      }else if(localStorage.length == 0){
+        localStorage.setItem(key, id);
+      }
+      else{
+        localStorage.setItem(key, id);
+      }
+  }
+
 }

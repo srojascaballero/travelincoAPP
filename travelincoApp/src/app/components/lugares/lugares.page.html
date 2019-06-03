@@ -28,7 +28,7 @@
 								<a [routerLink]="['/lugares/' + place.id]" routerDirection="forward" class="link-title">{{place.name}}</a>
 							</ion-col>
 							<ion-col size="4">
-								<a routerLink="/favoritos"  class="fav" (click)="presentAlert()"> <ion-icon name="heart-empty" color="primary"></ion-icon></a>
+								<a class="fav" (click)="addtoFavorites(place.name, place.id)"> <ion-icon name="heart-empty" color="primary"></ion-icon></a>
 							</ion-col>
 					    </ion-row>
 				</div>

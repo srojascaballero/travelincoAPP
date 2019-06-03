@@ -43,7 +43,27 @@ export class LugarPage implements OnInit {
         this.avatarImg = element.avatarImg
       })
     })
+
   }
+
+  addtoFavorites(name : string){  
+    console.log("Entered");
+      let key = name;
+
+      let value  = localStorage.getItem(key);
+      if(value != undefined && value != null && value != '' && localStorage.length != 0){
+        localStorage.setItem(key, this.id);
+      }else if(localStorage.length == 0){
+        localStorage.setItem(key, this.id);
+      }
+      else{
+        localStorage.setItem(key, this.id);
+      }
+
+    
+
+  }
+
 
 
 }
