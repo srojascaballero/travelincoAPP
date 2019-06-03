@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PlacesService } from 'src/app/services/places.service';
 
 @Component({
   selector: 'app-los-diez-pueblos',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LosDiezPueblosPage implements OnInit {
 
-  constructor() { }
+  public places : any = [];
+
+  constructor(public placeservice : PlacesService) { }
 
   ngOnInit() {
+
+    this.placeservice.getLugares().subscribe( places => {
+  		this.places = places;
+  	});
+
   }
 
 }

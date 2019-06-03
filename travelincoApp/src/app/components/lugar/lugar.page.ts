@@ -14,6 +14,7 @@ export class LugarPage implements OnInit {
   id;
   namePlace;
   descriptionPlace;
+  public completeDescription : any[];
   imgPlace;
 
   constructor( public placeservice : PlacesService, private route: ActivatedRoute ) { }
@@ -26,7 +27,8 @@ export class LugarPage implements OnInit {
   			if(element.id == this.id){
   				this.namePlace = element.name;
   				this.descriptionPlace = element.description
-  				this.imgPlace = element.img
+          this.imgPlace = element.img
+          this.completeDescription = element.completeText
   			}
   		})
   	});
