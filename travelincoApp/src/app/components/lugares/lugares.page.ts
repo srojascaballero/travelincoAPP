@@ -16,7 +16,7 @@ import { MenuController } from '@ionic/angular';
 export class LugaresPage implements OnInit {
 
   public places : any = [];
-
+  public recommendedPlaces : Array<any>[] = [];
   public fav : any = [];
 
   constructor( public placeservice : PlacesService, public alertController: AlertController, private menu: MenuController ) { 
@@ -38,8 +38,22 @@ export class LugaresPage implements OnInit {
 
   ngOnInit() {
   	this.placeservice.getLugares().subscribe( places => {
-  		this.places = places;
+      // console.log("All Places: "+ JSON.stringify(places));
+      this.places = places;  
+      this.createRecommendedPlacesList(places);
   	});
+  }
+
+  createRecommendedPlacesList(placesList : any){
+  
+   for (let index = 0; index < placesList.length; index++) {
+     
+    if(placesList[index].recommended == true){
+      
+      this.recommendedPlaces.push(placesList[index]);
+    }
+   }
+   console.log("Recommended: "+ this.recommendedPlaces);
   }
 
 }
