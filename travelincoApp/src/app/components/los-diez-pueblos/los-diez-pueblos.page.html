@@ -7,23 +7,54 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-searchbar placeholder="Busca una experiencia"></ion-searchbar>
     <ion-grid>
       <ion-row class="ion-justify-content-center">
         <ion-col size="12">
           <h1 class="title-articulo">Los 10 pueblos más bonitos de Colombia</h1>
           <p class="text">Los pueblos más bonitos de Colombia tienen mucho más de lo que crees, en la mayoría de los pueblos de Colombia encontrarás paraísos inexplorados, naturaleza y personas únicas.</p><br>
-          <img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/Lomas.jpg?alt=media&token=253a2c2e-e742-4eb7-b8a8-3d6dce9851ab" alt="">
+          <p class="text">Por esta razón nos hemos dado a la tarea de escoger para ti los lugares que a nuestro a parecer son los pueblos más lindos de Colombia! En algunos te contamos cómo llegar, qué hacer y dónde pasar la noche.</p><br> 
+          <!-- <img src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/Lomas.jpg?alt=media&token=253a2c2e-e742-4eb7-b8a8-3d6dce9851ab" alt=""> -->
         </ion-col>
         <br>
       </ion-row>
+      <ion-row>
+			<ion-col *ngFor = "let place of places" size="6">
+
+				<ion-card>
+				  <a [routerLink]="['/lugares/' + place.id]" routerDirection="forward"><img src="{{place.img}}" alt=""></a>
+				</ion-card>
+				<div class="content">
+						<ion-row>
+							<ion-col size="8">
+								<a [routerLink]="['/lugares/' + place.id]" routerDirection="forward" class="link-title">{{place.name}}</a>
+							</ion-col>
+							<ion-col size="4">
+								<a  class="fav" (click)="addtoFavorites(place.name,place.id)"> <ion-icon name="heart-empty" color="primary"></ion-icon></a>
+							</ion-col>
+					    </ion-row>
+				</div>
+				<div class="description">
+					<ion-row>
+							<ion-col size="12">
+								<p class="text-description">
+							  		{{place.description | slice:0:40}}<span class="more">...</span>
+								</p>
+							</ion-col>
+					    </ion-row>
+					
+				</div>
+				
+
+				
+			</ion-col>
+		</ion-row> 
     </ion-grid>
   </ion-content>
   
   <ion-footer>
     <ion-toolbar>
       <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
-        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" ><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
+        <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/lugares"><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
         <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
         <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
         <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>

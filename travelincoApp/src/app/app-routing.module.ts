@@ -35,6 +35,7 @@ const routes: Routes = [
   { path: 'los-diez-pueblos', loadChildren: './components/los-diez-pueblos/los-diez-pueblos.module#LosDiezPueblosPageModule' },
   { path: 'sitionuevo', loadChildren: './components/sitionuevo/sitionuevo.module#SitionuevoPageModule' },
   { path: 'select-account', loadChildren: './components/select-account/select-account.module#SelectAccountPageModule' },
+  {path: 'agregaExperiencia/:id', loadChildren: './components/experiencia/experiencia.module#ExperienciaPageModule'}
 ];
 
 @NgModule({
