@@ -1,0 +1,173 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+        </ion-buttons>
+        <ion-title class="sitio-title">Filtros</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-buttons>
+
+        <ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/price-filter"
+            routerLinkActive="active">Precios</ion-button>
+        <ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/calendar"
+            routerLinkActive="active">Calendario</ion-button>
+        <ion-button fill="outline" shape="round" size="small" class="filter-button" routerLink="/map"
+            routerLinkActive="active">Ubicación</ion-button>
+    </ion-buttons>
+    <ion-grid>
+        <ion-row *ngFor="let experience of experiences">
+            <ion-col size="6">
+                <ion-card>
+                    <a  [routerLink]="['/detalleExperiencia/' + experience.id]" routerDirection="forward"><img
+                            [src]="experience.img"
+                            alt=""></a>
+                </ion-card>
+                <div class="content">
+                    <ion-row>
+                        <ion-col size="8">
+                            <a [routerLink]="['/detalleExperiencia/' + experience.id]" routerDirection="forward"
+                                class="link-title">{{experience.name}}</a>
+                        </ion-col>
+                        <ion-col size="4">
+                            <a routerLink="/favoritos" class="fav" (click)="presentAlert()">
+                                <ion-icon name="heart-empty" color="primary"></ion-icon>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </div>
+                <!-- <div class="description">
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="text-description">
+                                
+                                <span class="more">...</span>
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </div> -->
+            </ion-col>
+            <!-- <ion-col size="6">
+                <ion-card>
+                    <a routerDirection="forward"><img
+                            src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/rutas-culturales.jpg?alt=media&token=cc3bb580-d692-4ad0-8e21-b13647327d3e"
+                            alt=""></a>
+                </ion-card>
+                <div class="content">
+                    <ion-row>
+                        <ion-col size="8">
+                            <a routerLink="/lugares/kHy4KizzRxnZUNp8vLpx" routerDirection="forward"
+                                class="link-title">Rutas Históricas</a>
+                        </ion-col>
+                        <ion-col size="4">
+                            <a routerLink="/favoritos" class="fav" (click)="presentAlert()">
+                                <ion-icon name="heart-empty" color="primary"></ion-icon>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </div>
+                <div class="description">
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="text-description">
+                                Se encuentra rodeado por el Área Única Los Estoraques.
+                                <span class="more">...</span>
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </ion-col> -->
+        </ion-row>
+        <ion-row>
+            <ion-col size="6">
+                <ion-card>
+                    <a routerDirection="forward"><img
+                            src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/rutas-culturales.jpg?alt=media&token=cc3bb580-d692-4ad0-8e21-b13647327d3e"
+                            alt=""></a>
+                </ion-card>
+                <div class="content">
+                    <ion-row>
+                        <ion-col size="8">
+                            <a routerLink="/lugares/kHy4KizzRxnZUNp8vLpx" routerDirection="forward"
+                                class="link-title">Rutas Históricas</a>
+                        </ion-col>
+                        <ion-col size="4">
+                            <a routerLink="/favoritos" class="fav" (click)="presentAlert()">
+                                <ion-icon name="heart-empty" color="primary"></ion-icon>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </div>
+                <div class="description">
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="text-description">
+                                Se encuentra rodeado por el Área Única Los Estoraques.
+                                <span class="more">...</span>
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </ion-col>
+            <ion-col size="6">
+                <ion-card>
+                    <a routerDirection="forward"><img
+                            src="https://firebasestorage.googleapis.com/v0/b/travelinco-ionic.appspot.com/o/rutas-culturales.jpg?alt=media&token=cc3bb580-d692-4ad0-8e21-b13647327d3e"
+                            alt=""></a>
+                </ion-card>
+                <div class="content">
+                    <ion-row>
+                        <ion-col size="8">
+                            <a routerLink="/lugares/kHy4KizzRxnZUNp8vLpx" routerDirection="forward"
+                                class="link-title">Rutas Históricas</a>
+                        </ion-col>
+                        <ion-col size="4">
+                            <a routerLink="/favoritos" class="fav" (click)="presentAlert()">
+                                <ion-icon name="heart-empty" color="primary"></ion-icon>
+                            </a>
+                        </ion-col>
+                    </ion-row>
+                </div>
+                <div class="description">
+                    <ion-row>
+                        <ion-col size="12">
+                            <p class="text-description">
+                                Se encuentra rodeado por el Área Única Los Estoraques.
+                                <span class="more">...</span>
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/lugares">
+                    <ion-icon name="search" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/favoritos">
+                    <ion-icon name="heart-empty" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/filtros">
+                    <ion-icon name="options" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/usuario">
+                    <ion-icon name="person" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { Router } from '@angular/router';
-import { PlacesService, place } from '../../services/places.service';
+import { PlacesService } from '../../services/places.service';
 import { AlertController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
 

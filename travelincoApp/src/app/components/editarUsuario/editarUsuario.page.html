@@ -2,13 +2,7 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
-      <ion-button  routerLink="/editarUsuario" color="primary" >
-        <ion-icon name="create" >
-
-        </ion-icon>
-        </ion-button>
     </ion-buttons>
-
     <ion-title class="sitio-title">Perfil<br><span class="sitio-subtitle"></span></ion-title>
   </ion-toolbar>
 </ion-header>
@@ -27,10 +21,10 @@
           </ion-avatar>
 
           <!-- <ion-button expand="block" color="danger" (click)="Onlogout()">
-                CERRAR SESIÓN
-            </ion-button>  -->
+                      CERRAR SESIÓN
+                  </ion-button>  -->
         </ion-col>
-      
+
       </ion-row>
       <ion-row class="ion-justify-content-center">
         <ion-col size="12">
@@ -41,29 +35,37 @@
 
       <ion-row>
         <ion-col>
-            <ion-card-title class="titulo">Acerca de mi</ion-card-title>
-            <p class="text-description">Soy desarrollador</p>
+          <ion-card-title class="titulo">Acerca de mi</ion-card-title>
+          <p class="text-description">Soy desarrollador</p>
+          <ion-input placeholder="Enter Input"></ion-input>
         </ion-col>
       </ion-row>
       <ion-row>
-          <ion-col>
-              <ion-card-title class="titulo">Información Personal</ion-card-title>
-              <ion-card-subtitle>Sexo</ion-card-subtitle>
-              <ion-card-content>Masculino</ion-card-content>
-
-          </ion-col>
-        </ion-row>
-        <ion-button (click)="Onlogout()">CERRAR SESIÓN</ion-button>
+        <ion-col>
+          <ion-card-title class="titulo">Información Personal</ion-card-title>
+          <ion-card-subtitle>Sexo</ion-card-subtitle>
+          <ion-radio-group>
+            <ion-item>
+              <ion-label>Male</ion-label>
+              <ion-radio slot="start" value="M" checked></ion-radio>
+            </ion-item>
+             <ion-item>
+              <ion-label>Female</ion-label>
+              <ion-radio slot="end" value="F" checked></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
     </ion-col>
   </ion-grid>
- 
+
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
     <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
       <ion-col size="3" class="ion-text-center">
-        <ion-button fill="clear"  routerLink="/lugares">
+        <ion-button fill="clear">
           <ion-icon name="search" color="primary"></ion-icon>
         </ion-button>
       </ion-col>

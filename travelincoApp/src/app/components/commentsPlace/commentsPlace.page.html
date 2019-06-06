@@ -1,65 +1,86 @@
 <ion-header translucent="true">
-		<ion-toolbar>
-		  <ion-buttons slot="start" translucent>
-			 <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
-		  </ion-buttons>
-		</ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start" translucent>
+            <ion-back-button color="primary" class="back-button-custom" text=""></ion-back-button>
+           
+        </ion-buttons>
+        <ion-button [routerLink]="['/agregaExperiencia/' + id]" fill="clear">
+            <ion-icon name="add" color="primary"></ion-icon>
+        </ion-button>
+        Jericó, Antioquia
+    </ion-toolbar>
 </ion-header>
 
 
 <ion-content fullscreen="true">
-        <ion-slides pager="true">
-            <ion-slide>
-                <ion-img [src]="imgPlace"></ion-img>
-            </ion-slide>
-            <ion-slide>
-                <ion-img [src]="imgPlace"></ion-img>
-            </ion-slide>
-            <ion-slide>
-                <ion-img [src]="imgPlace"></ion-img>
-            </ion-slide>
-        </ion-slides>
-        <br>
-        <ion-grid padding>    
-            <ion-row *ngFor="let comment of comments">
-                <ion-col size="12">
-                    <ion-row>
-                        <ion-col size="3">
-                            <ion-avatar>
-                                <img [src]="comment.avatarImg" alt="">
-                            </ion-avatar>
-                        </ion-col>
-                        <ion-col size="9"> 
-                            <ion-label>
-                                <h2>{{comment.userName}}</h2>
-    
-                                <ion-card style="padding: 0; margin: 0;">
-                                        <img [src]="comment.commentImg" alt="">
-                                    </ion-card>
-    
-    
-                                <h3 style="margin-bottom: 7px;">{{comment.commentName}}</h3>
-    
-                            
-    
-                                <p>{{comment.commentDescription}}</p>
-                                
-                            </ion-label>
-                        </ion-col>
-                    </ion-row>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-content>
-    
+    <ion-slides pager="true">
+        <ion-slide>
+            <ion-img [src]="imgPlace"></ion-img>
+        </ion-slide>
+        <ion-slide>
+            <ion-img [src]="imgPlace"></ion-img>
+        </ion-slide>
+        <ion-slide>
+            <ion-img [src]="imgPlace"></ion-img>
+        </ion-slide>
+    </ion-slides>
+    <br>
+    <ion-grid padding>
+        <ion-row *ngFor="let comment of comments">
+            <ion-col size="12">
+                <ion-row>
+                    <ion-col size="3">
+                        <ion-avatar>
+                            <img [src]="comment.avatarImg" alt="">
+                        </ion-avatar>
+                    </ion-col>
+                    <ion-col size="9">
+                        <ion-label>
+                            <h2>{{comment.userName}}</h2>
+
+                            <ion-card style="padding: 0; margin: 0;">
+                                <img [src]="comment.commentImg" alt="">
+                            </ion-card>
+
+
+                            <h3 style="margin-bottom: 7px;">{{comment.commentName}}</h3>
+
+
+
+                            <p>{{comment.commentDescription}}</p>
+
+                        </ion-label>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
 
 <ion-footer>
-        <ion-toolbar>
-            <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
-                <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/los-diez-pueblos"><ion-icon name="search" color="primary"></ion-icon></ion-button></ion-col>
-                <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/favoritos"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button></ion-col>
-                <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/filtros" ><ion-icon name="options" color="primary"></ion-icon></ion-button></ion-col>
-                <ion-col size="3" class="ion-text-center"><ion-button fill="clear" routerLink="/usuario"><ion-icon name="person" color="primary"></ion-icon></ion-button></ion-col>
-            </ion-row>
-        </ion-toolbar>
-      </ion-footer>
+    <ion-toolbar>
+        <ion-row class="ion-align-items-center ion-justify-content-center footer-buttons-row">
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/los-diez-pueblos">
+                    <ion-icon name="search" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/favoritos">
+                    <ion-icon name="heart-empty" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/filtros">
+                    <ion-icon name="options" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+                <ion-button fill="clear" routerLink="/usuario">
+                    <ion-icon name="person" color="primary"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

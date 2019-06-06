@@ -36,9 +36,12 @@ const routes: Routes = [
   { path: 'sitionuevo', loadChildren: './components/sitionuevo/sitionuevo.module#SitionuevoPageModule' },
   { path: 'select-account', loadChildren: './components/select-account/select-account.module#SelectAccountPageModule' },
   {path: 'agregaExperiencia/:id', loadChildren: './components/experiencia/experiencia.module#ExperienciaPageModule'},
-  {path: 'comentarioLugar', loadChildren: './components/commentsPlace/commentsPlace.module#CommentsPlaceModule'}
-];
+  {path: 'comentarioLugar/:id', loadChildren: './components/commentsPlace/commentsPlace.module#CommentsPlaceModule'},
+  {path: 'editarUsuario', loadChildren: './components/editarUsuario/editarUsuario.module#EditarUsuarioPageModule'},
+  {path: 'arte', loadChildren: './components/arte/arte.module#ArtePageModule'},
+  {path: 'detalleExperiencia/:id', loadChildren: './components/experienciaDetalle/experienciaDetalle.module#ExperienciaDetallePageModule'}
 
+];
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })

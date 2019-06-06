@@ -26,7 +26,7 @@
 				<ion-card-title class="titulo">{{namePlace}}</ion-card-title>
 			</ion-col>
 			<ion-buttons>
-					<ion-button  fill="clear" routerLink="/comentarioLugar" ><ion-icon name="chatbubbles" color="primary"></ion-icon></ion-button>
+					<ion-button  fill="clear" [routerLink]="['/comentarioLugar/' + id]" ><ion-icon name="chatbubbles" color="primary"></ion-icon></ion-button>
 					<ion-button  fill="clear" (click)="addtoFavorites(namePlace)"><ion-icon name="heart-empty" color="primary" ></ion-icon></ion-button>
 			</ion-buttons>	
 		</ion-row>

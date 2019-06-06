@@ -15,6 +15,7 @@ export class LosDiezPueblosPage implements OnInit {
   ngOnInit() {
 
     this.placeservice.getLugares().subscribe( places => {
+      console.log("ID? " + JSON.stringify(places));
   		this.places = places;
   	});
 

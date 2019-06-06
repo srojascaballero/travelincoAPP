@@ -1,0 +1,83 @@
+.img-lugar{
+	margin: 0;
+}
+p{
+	font-size: .9em;
+	text-align: justify;
+	color: gray;
+}
+
+ion-card-title.titulo{
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.slides-md {
+    --bullet-background: var(--ion-color-step-200,rgb(255, 255, 255));
+    --bullet-background-active: var(--ion-color-primary,rgb(56, 128, 255));
+    --progress-bar-background: rgba(var(--ion-text-color-rgb,0,0,0),0.25);
+    --progress-bar-background-active: var(--ion-color-primary-shade,rgb(49, 113, 224));
+    --scroll-bar-background: rgba(var(--ion-text-color-rgb,0,0,0),0.1);
+    --scroll-bar-background-active: rgba(var(--ion-text-color-rgb,0,0,0),0.5);
+}
+
+.swiper-pagination-bullet{
+    background: white !important;
+    opacity: .8;
+}
+
+ion-card-title.experiencia-titulo{
+	color: rgb(236, 96, 138);
+	font-size: 1.4em;
+	font-weight: light;
+	position: relative;
+	margin-top: 20px;
+}
+
+ion-card-title.experiencia-titulo span{
+	position: absolute;
+	left: 0;
+	top: -15px;
+	height: 5px;
+	width: 35px;
+	background: #EC608A;
+	font-size: 1em;
+	color: rgb(236, 96, 138)
+}
+
+.text-description{
+	text-align: justify;
+	color: rgb(77, 77, 77);
+}
+
+ion-header{
+	--ion-background-color: rgba(0,0,0,0);
+	position: absolute;
+}
+
+.header-md:after{
+	display: none;
+}
+
+
+.titulo-name{
+	color: rgb(77, 77, 77);
+
+}
+
+.titulo-otro{
+
+	color: rgb(236, 96, 138)
+}
+
+.titulo-mini{
+	font-size: 1.4em;
+	color: rgb(236, 96, 138)
+
+}
+
+
+// .elegir{
+// 	--color: #EC608A ;
+// 	font-size: .6em;
+// }
